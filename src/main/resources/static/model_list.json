@@ -1,0 +1,22 @@
+{
+    "models": [
+
+	    [
+			"YUSU/yusura_nd",
+			"YUSU/yusura_nn",
+			"YUSU/yusura_pn",
+			"YUSU/yusura_pd"
+		],
+
+		[
+			"YAYO/yayoi_nd",
+			"YAYO/yayoi_nn",
+			"YAYO/yayoi_pd",
+			"YAYO/yayoi_pn"
+		]
+	],
+    "messages": [
+   		"嘎呜~",
+        "我来了~"
+    ]
+}

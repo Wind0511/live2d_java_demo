@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+
+    <link th:href="@{/assets/waifu.css}" rel="stylesheet" type="text/css">
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/jquery-ui.min.js}"></script>
+    <script th:src="@{/assets/waifu-tips.js}"></script>
+    <script th:src="@{/assets/live2d.js}"></script>
+    <script th:src="@{/assets/autoload.js}"></script>
+
+    <script type="text/javascript">
+        function oc(msg) {
+            showMessage(msg + "0.0", 5678, true);
+        }
+
+        function ome(msg) {
+            showMessage("就请<span style='color: #00ccff'>你</span>" + msg, 4567, true)
+        }
+
+        function cod() {
+            $.post("/test", function (res) {
+                showMessage("请求成功", 4567, true)
+            })
+        }
+        function show() {
+            cz();
+            $('.waifu').show();
+        }
+    </script>
+
+</head>
+<body class="container">
+<h3 id="text">Test</h3>
+<br><br>
+<a href="/index" style="text-decoration: none;color: #0099cc">把鼠标移动过来试一下啊（链接是进入主页）</a>
+<br><br>
+<a href="/index" style="text-decoration: none;color: #0099cc">这是在autoload.js中加入的message</a>
+<br><br>
+<button class="btn" id="btn" onclick="oc('你也可以这样加入message哦~')" onmouseenter="ome('大胆的按下去吧！')">这是一个按钮！</button>
+<br><br>
+<button class="btn" onclick="cod()">一个异步请求!</button>
+<br>
+<button class="btn" onclick="show()">show</button>
+
+<div class="waifu">
+    <!--对话框-->
+    <div class="waifu-tips"></div>
+    <!--看板娘-->
+    <canvas id="live2d" class="live2d"></canvas>
+    <!--工具栏-->
+    <div class="waifu-tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <span class="fui-info-circle"></span>
+        <span class="fui-cross"></span>
+    </div>
+</div>
+</body>
+</html>
+

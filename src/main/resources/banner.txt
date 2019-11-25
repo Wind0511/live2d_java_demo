@@ -1,0 +1,20 @@
+
+          ___                _---ヘ
+        く__,.ヘヽ.　　　　  /　,ー､ 〉
+    　　　　   　＼ ', !-─‐-i　/　
+    　　　 　    ／｀ｰ'　　　 L/／｀ヽ､
+    　　   　 /　 ／,　 /|　 ,　 ,　  ',
+    　　   　ｲ 　/ /-‐/　ｉ　L_ ﾊ ヽ!　 i
+    　　　   ﾚ ﾍ 7ｲ｀ﾄ　 ﾚ'ｧ-ﾄ､!ハ|　 |
+     　　 　  !,/  '0'　　 ´0'  ソ| 　  |　　　
+    　　　　 |.从"　　   _      / |./ 　|
+    　　　　 ﾚ'| i＞.､,,__　_,.イ / .i　|      Thanks
+    　　　　　 ﾚ'| | / k_７_/ﾚ'ヽ,　ﾊ.　|           fghrsh / https://github.com/fghrsh/live2d_demo
+    　　　　　　| |/i 〈|/　 i　,.ﾍ |　i　|         WhiteMagic2014 / https://github.com/WhiteMagic2014/live2d_api_java
+    　　　　　　|/ /　ｉ： 　 ﾍ!　　＼　|            journey-ad / https://github.com/journey-ad/live2d_src
+    　　　 　  kヽ>､ﾊ 　 _,.ﾍ､ 　 /､!            xiazeyu / https://github.com/xiazeyu/live2d-widget.js
+    　　　　　 !'〈//｀Ｔ´', ＼ ｀'7'ｰr'            Live2d Cubism SDK WebGL 2.1 Projrct & All model authors.
+    　　　　　 ﾚ'ヽL__|___i,___,ンﾚ|ノ
+    　　　　　 　  　ﾄ-,/　|___./
+    　　　　　 　  　'ｰ'　  !_,.:
+
