@@ -9,17 +9,10 @@ import java.util.stream.Collectors;
 
 public class ModelTextures {
 
-	/**
-	 * 缓存map
-	 */
+	
 	private static Map<String, JSONArray> cache = new HashMap<String, JSONArray>();
 
-	/**
-	 * 
-	 * @Description:获取材质
-	 * @author: chenhaoyu
-	 * @time:Mar 23, 2019 12:14:58 PM
-	 */
+	
 	public static JSONArray getTextures(String modelName, int id) {
 		JSONArray list = getList(modelName);
 		if (list.isEmpty()) {
@@ -34,13 +27,7 @@ public class ModelTextures {
 
 	}
 
-	/**
-	 * 
-	 * @Description:获取列表缓存
-	 * @return
-	 * @author: chenhaoyu
-	 * @time:Mar 23, 2019 12:43:09 PM
-	 */
+	
 	public static JSONArray getList(String modelName) {
 		if (cache.containsKey(modelName)) {
 			return cache.get(modelName);
@@ -51,14 +38,7 @@ public class ModelTextures {
 		}
 	}
 
-	/**
-	 * 
-	 * @Description: 获得材质列表
-	 * @return
-	 * @author: chenhaoyu
-	 * @throws FileNotFoundException
-	 * @time:Mar 23, 2019 1:09:58 PM
-	 */
+	
 	private static JSONArray getTextures(String modelName) {
 		if (FileUtils.exists("/model/" + modelName + "/textures_order.json")) {
 			try {
@@ -93,16 +73,7 @@ public class ModelTextures {
 		}
 	}
 
-	/**
-	 * 
-	 * @Description:获得指定模型 中指定资源文件夹下资源
-	 * @param modelname
-	 * @param foldername
-	 * @return
-	 * @throws FileNotFoundException
-	 * @author: chenhaoyu
-	 * @time:Mar 23, 2019 4:31:00 PM
-	 */
+	
 	private static List<String> getOrderedFileName(String modelname, String foldername) throws FileNotFoundException {
 		String serverpath = ResourceUtils.getURL("classpath:static").getPath();
 		String[] namesTemp = FileUtils.getFileName(serverpath + "/model/" + modelname + "/" + foldername);
@@ -115,15 +86,7 @@ public class ModelTextures {
 		return resultList;
 	}
 
-	/**
-	 * 
-	 * @Description: 获取当前目录下 textures.xxx 中左右的文件名 返回
-	 * @param modelnameString
-	 * @return
-	 * @throws FileNotFoundException
-	 * @author: chenhaoyu
-	 * @time:Mar 23, 2019 2:09:06 PM
-	 */
+	
 	private static JSONArray getAllTextureFileName(String modelname) throws FileNotFoundException {
 		String serverpath = ResourceUtils.getURL("classpath:static").getPath();
 		String[] namesTemp = FileUtils.getFileName(serverpath + "/model/" + modelname);
