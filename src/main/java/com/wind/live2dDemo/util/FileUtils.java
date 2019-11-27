@@ -30,14 +30,6 @@ public class FileUtils {
 		}
 	}
 
-	/**
-	 * 
-	 * @Description:判断资源是都存在
-	 * @param path
-	 * @return
-	 * @author: chenhaoyu
-	 * @time:Mar 23, 2019 2:11:49 PM
-	 */
 	public static boolean exists(String path) {
 		if (!path.startsWith("/static/")) {
 			path = "/static/" + path;
@@ -46,14 +38,7 @@ public class FileUtils {
 		return resource.exists();
 	}
 
-	/**
-	 * 
-	 * @Description:列出当前文件夹内所有文件名
-	 * @param path
-	 * @return
-	 * @author: chenhaoyu
-	 * @time:Mar 23, 2019 2:11:23 PM
-	 */
+	
 	public static String[] getFileName(String path) {
 		File file = new File(path);
 		String[] filename = file.list();
